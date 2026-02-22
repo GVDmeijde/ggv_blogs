@@ -5,6 +5,7 @@ on:
   push:
     branches:
       - main
+      - feature/port-from-pirack
   pull_request:
     branches:
       - main
@@ -23,7 +24,7 @@ jobs:
 
     ### Build docusaurus site
     - name: Build docusaurus site
-      uses: kingtechnl/githubactions/docusaurus-build@main
+      uses: kingtechnl/githubactions/docusaurus-build@feature/docusaurus-additional-packages
       with:
         targetDir: '${{ github.workspace }}/_publish'
         siteName: 'GGV Blogs'
@@ -33,6 +34,7 @@ jobs:
         favicon: 'https://www.gravatar.com/avatar/1c367716e9c649121b5b877ad2f1b72f'
         configFile: '${{ github.workspace }}/configs/docusaurus.config.js'
         sideBarsFile: '${{ github.workspace }}/configs/sidebars.js'
+        packages: 'react-image-gallery@2.1.1'
 
     ### Deploy to GitHub Pages
     - name: Deploy to GitHub Pages
