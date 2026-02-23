@@ -8,6 +8,20 @@ const {themes: prismThemes} = require('prism-react-renderer');
 const fs = require('fs');
 const path = require('path');
 
+// Convert folder names to human-readable labels
+function humanize(str) {
+  return str
+    // Remove numeric prefixes
+    .replace(/^\d+_/, '')
+    // Split on capital letters, underscores, and hyphens
+    .replace(/([a-z])([A-Z])/g, '$1 $2')
+    .replace(/[_-]/g, ' ')
+    // Capitalize first letter of each word
+    .split(' ')
+    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(' ');
+}
+
 // Dynamically generate navbar items from docs folder structure
 function getDocsNavbarItems() {
   const docsPath = path.join(__dirname, 'docs');
@@ -18,27 +32,52 @@ function getDocsNavbarItems() {
     
     for (const entry of entries) {
       if (entry.isDirectory() && !entry.name.startsWith('.')) {
-        // Extract number prefix and name (e.g., "1_ggtv" -> "GGTV")
+        // Extract number prefix and name
         const match = entry.name.match(/^\d+_(.+)$/);
         if (match) {
           const sidebarId = entry.name.replace(/^\d+_/, '');
-          const label = match[1].toUpperCase();
+          const label = humanize(match[1]);
           
-          console.log(`Navbar item: ${entry.name} -> sidebarId: ${sidebarId}, label: ${label}`);
+          // Count markdown files in the directory
+          const dirPath = path.join(docsPath, entry.name);
+          const files = fs.readdirSync(dirPath, { withFileTypes: true });
+          const mdFiles = files.filter(f => 
+            f.isFile() && (f.name.endsWith('.md') || f.name.endsWith('.mdx'))
+          );
           
-          items.push({
-            type: 'docSidebar',
-            sidebarId: sidebarId,
-            position: 'left',
-            label: label,
-          });
+          // Use docSidebar for multiple files, doc link for single file
+          if (mdFiles.length > 1) {
+            console.log(`Navbar item: ${entry.name} -> docSidebar: ${sidebarId}, label: ${label}`);
+            items.push({
+              type: 'docSidebar',
+              sidebarId: sidebarId,
+              position: 'left',
+              label: label,
+            });
+          } else if (mdFiles.length === 1) {
+            // Link directly to the single document (strip numeric prefixes)
+            const folderName = entry.name.replace(/^\d+_/, '');
+            const fileName = mdFiles[0].name.replace(/\.mdx?$/, '').replace(/^\d+_/, '');
+            const docId = `${folderName}/${fileName}`;
+            console.log(`Navbar item: ${entry.name} -> doc: ${docId}, label: ${label}`);
+            items.push({
+              type: 'doc',
+              docId: docId,
+              position: 'left',
+              label: label,
+            });
+          }
         }
       }
     }
     
     // Sort by directory name (which includes the number prefix)
-    items.sort((a, b) => a.sidebarId.localeCompare(b.sidebarId));
-    console.log('Navbar items generated:', items.map(i => i.sidebarId));
+    items.sort((a, b) => {
+      const aId = a.sidebarId || a.docId;
+      const bId = b.sidebarId || b.docId;
+      return aId.localeCompare(bId);
+    });
+    console.log('Navbar items generated:', items.map(i => i.sidebarId || i.docId));
   } catch (error) {
     console.warn('Could not read docs directory:', error);
   }

@@ -1,4 +1,8 @@
-# GGVV
+---
+sidebar_position: 1
+---
+
+# Intro
 
 <img src="/img/ggvv-banner.png" alt="GGVV" loading="lazy"/>
 
