@@ -60,7 +60,7 @@ Het is dus belangrijk dat u het juiste hout gebruikt voor uw gerecht, anders sma
 Voor het gemak hebben we hieronder een aantal houtsoorten met smaak en bijpassende gerechten opgesomd.
 
 | Houtsoort	| Eigenschappen	| Gerechten |
-|===|===|===| 
+|---|---|---| 
 | Abrikoos | Baconachtige smaak maar milder en zoeter dan Hickory. | Kalkoen, Kip, Varken, Vis |
 | Acacia | Kruidig en aardachtig van smaak. Familie van, maar niet zo zwaar als Mesquite. | Kip, rund, vis |
 | Ahorn | Rokerig, mild en zoetig. | Fazant, gevogelte, groente, kaas, kalkoen, kip, patrijs, varken (ham) |

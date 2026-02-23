@@ -32,51 +32,52 @@ function getDocsNavbarItems() {
     
     for (const entry of entries) {
       if (entry.isDirectory() && !entry.name.startsWith('.')) {
-        // Extract number prefix and name
-        const match = entry.name.match(/^\d+_(.+)$/);
-        if (match) {
-          const sidebarId = entry.name.replace(/^\d+_/, '');
-          const label = humanize(match[1]);
-          
-          // Count markdown files in the directory
-          const dirPath = path.join(docsPath, entry.name);
-          const files = fs.readdirSync(dirPath, { withFileTypes: true });
-          const mdFiles = files.filter(f => 
-            f.isFile() && (f.name.endsWith('.md') || f.name.endsWith('.mdx'))
-          );
-          
-          // Use docSidebar for multiple files, doc link for single file
-          if (mdFiles.length > 1) {
-            console.log(`Navbar item: ${entry.name} -> docSidebar: ${sidebarId}, label: ${label}`);
-            items.push({
-              type: 'docSidebar',
-              sidebarId: sidebarId,
-              position: 'left',
-              label: label,
-            });
-          } else if (mdFiles.length === 1) {
-            // Link directly to the single document (strip numeric prefixes)
-            const folderName = entry.name.replace(/^\d+_/, '');
-            const fileName = mdFiles[0].name.replace(/\.mdx?$/, '').replace(/^\d+_/, '');
-            const docId = `${folderName}/${fileName}`;
-            console.log(`Navbar item: ${entry.name} -> doc: ${docId}, label: ${label}`);
-            items.push({
-              type: 'doc',
-              docId: docId,
-              position: 'left',
-              label: label,
-            });
-          }
+        // Extract number prefix and name (prefix is optional)
+        const match = entry.name.match(/^(\d+)_(.+)$/);
+        const sidebarId = entry.name.replace(/^\d+_/, '');
+        const label = humanize(match ? match[2] : entry.name);
+        const sortOrder = match ? parseInt(match[1], 10) : 999; // No prefix = sort last
+        
+        // Count markdown files in the directory
+        const dirPath = path.join(docsPath, entry.name);
+        const files = fs.readdirSync(dirPath, { withFileTypes: true });
+        const mdFiles = files.filter(f => 
+          f.isFile() && (f.name.endsWith('.md') || f.name.endsWith('.mdx'))
+        );
+        
+        // Use docSidebar for multiple files, doc link for single file
+        if (mdFiles.length > 1) {
+          console.log(`Navbar item: ${entry.name} -> docSidebar: ${sidebarId}, label: ${label}`);
+          items.push({
+            type: 'docSidebar',
+            sidebarId: sidebarId,
+            position: 'left',
+            label: label,
+            sortOrder: sortOrder,
+          });
+        } else if (mdFiles.length === 1) {
+          // Link directly to the single document (strip numeric prefixes)
+          const folderName = entry.name.replace(/^\d+_/, '');
+          const fileName = mdFiles[0].name.replace(/\.mdx?$/, '').replace(/^\d+_/, '');
+          const docId = `${folderName}/${fileName}`;
+          console.log(`Navbar item: ${entry.name} -> doc: ${docId}, label: ${label}`);
+          items.push({
+            type: 'doc',
+            docId: docId,
+            position: 'left',
+            label: label,
+            sortOrder: sortOrder,
+          });
         }
       }
     }
     
-    // Sort by directory name (which includes the number prefix)
-    items.sort((a, b) => {
-      const aId = a.sidebarId || a.docId;
-      const bId = b.sidebarId || b.docId;
-      return aId.localeCompare(bId);
-    });
+    // Sort by numeric prefix (folders without prefix go last)
+    items.sort((a, b) => a.sortOrder - b.sortOrder);
+    
+    // Remove sortOrder property before returning (not needed in final config)
+    items.forEach(item => delete item.sortOrder);
+    
     console.log('Navbar items generated:', items.map(i => i.sidebarId || i.docId));
   } catch (error) {
     console.warn('Could not read docs directory:', error);
