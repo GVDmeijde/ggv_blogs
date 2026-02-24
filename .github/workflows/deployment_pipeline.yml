@@ -34,6 +34,7 @@ jobs:
         favicon: 'https://www.gravatar.com/avatar/1c367716e9c649121b5b877ad2f1b72f'
         #configFile: '${{ github.workspace }}/configs/docusaurus.config.js'
         #sideBarsFile: '${{ github.workspace }}/configs/sidebars.js'
+        kingtechActionsBranch: 'feature/docusaurus-root-navbar'
         packages: 'react-image-gallery@2.1.1'
         NavbarFromRootDir: 'true'
 
