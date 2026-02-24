@@ -30,3 +30,6 @@ Voor we docusaurus kunnen starten, moeten de volgende packages worden geinstalle
 ```cmd
 npm install react-image-gallery
 ```
+
+## Packages
+Voor de foto gallerijen gebruiken we [deze](https://www.npmjs.com/package/react-image-gallery) package.
