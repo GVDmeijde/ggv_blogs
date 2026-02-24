@@ -23,7 +23,7 @@ jobs:
 
     ### Build docusaurus site
     - name: Build docusaurus site
-      uses: kingtechnl/githubactions/docusaurus-build@feature/docusaurus-root-navbar
+      uses: kingtechnl/githubactions/docusaurus-build@main
       with:
         targetDir: '${{ github.workspace }}/_publish'
         siteName: 'GGV Blogs'
@@ -32,6 +32,7 @@ jobs:
         logo: 'https://www.gravatar.com/avatar/1c367716e9c649121b5b877ad2f1b72f'
         favicon: 'https://www.gravatar.com/avatar/1c367716e9c649121b5b877ad2f1b72f'
         packages: 'react-image-gallery@2.1.1'
+        customCss: './static/custom-css.css'
         NavbarFromRootDir: 'true'
 
     ### Deploy to GitHub Pages
