@@ -29,11 +29,11 @@ Ga in ieder geval nooit in de rooklucht zitten, zorg dat de barbecue in de open 
 
 # Blokken of snippers?
 
-Als een gerecht, zoals <a href="/ggvv/pulledPork">pulled pork</a>, 8-9 uur op de barbecue moet liggen betekend dit niet dat het de gehele tijd gerookt moet worden. 
+Als een gerecht, zoals [pulled pork](./2_pulledPork.mdx), 8-9 uur op de barbecue moet liggen betekend dit niet dat het de gehele tijd gerookt moet worden. 
 Teveel rook in het vlees zorgt voor een bittere smaak, en dat willen we voorkomen.
 
-Gijs raad bij gerechten die lang op de barbecue liggen, zoals pulled pork of <a href="/ggvv/oosterseSpareRibs">spare ribs</a> 2 a 3 blokken rookhout aan. 
-Kortere gerechten (rond 1 uur) als <a href="/ggvv/moinkBalls">MOINK balls</a> rookt Gijs alleen de eerste 20 a 30 minuten. Maar dit is natuurlijk afhankelijk van uw persoonlijke smaak!
+Gijs raad bij gerechten die lang op de barbecue liggen, zoals pulled pork of [spare ribs](./4_oosterseSpareribs.mdx) 2 a 3 blokken rookhout aan. 
+Kortere gerechten (rond 1 uur) als [MOINK balls](./6_moinkBalls.mdx) rookt Gijs alleen de eerste 20 a 30 minuten. Maar dit is natuurlijk afhankelijk van uw persoonlijke smaak!
 Roken doet Gijs het liefst aan het begin van de barbecue sessie wanneer het vlees nog rauw is, dan nemen het vlees en de marinade de smaak het best op. 
 Het eerste blok wordt dus, zodra het vlees op de barbecue gaat, op de brandende kolen gelegd.
 
