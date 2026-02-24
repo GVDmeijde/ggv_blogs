@@ -12,7 +12,7 @@ Na de aanleg van de beroemde tuin uit Gijs Grote Tuinverbouwing <sup>©</sup> , 
 Hierop beleeft Gijs allerlei culinaire avonturen. Bent u op zoek naar inspiratie voor uw barbecue? Zoek dan niet verder. 
 Hier vind u een aantal recepten die u zelf ook uit kunt voeren!
 
-<a href="/ggvv/bbq" class="no-link-color">
+<a href="/GijsGroteVleesverbouwing/bbq" class="no-link-color">
     <div class="left-image-container pop-out">
         <div class="hexagon_image image">
             <img
@@ -35,7 +35,7 @@ Hier vind u een aantal recepten die u zelf ook uit kunt voeren!
     </div>
 </a>
 
-<a href="/ggvv/pulledPork" class="no-link-color">
+<a href="/GijsGroteVleesverbouwing/pulledPork" class="no-link-color">
     <div class="right-image-container pop-out">
         <div class="text">
             <p>
@@ -57,7 +57,7 @@ Hier vind u een aantal recepten die u zelf ook uit kunt voeren!
     </div>
 </a>
 
-<a href="/ggvv/pulledPorkBallen" class="no-link-color">
+<a href="/GijsGroteVleesverbouwing/pulledPorkBallen" class="no-link-color">
     <div class="left-image-container pop-out">
         <div class="hexagon_image image">
             <img
@@ -77,7 +77,7 @@ Hier vind u een aantal recepten die u zelf ook uit kunt voeren!
     </div>
 </a>
 
-<a href="/ggvv/oosterseSpareribs" class="no-link-color">
+<a href="/GijsGroteVleesverbouwing/oosterseSpareribs" class="no-link-color">
     <div class="right-image-container pop-out">
         <div class="text">
             <p>
@@ -99,7 +99,7 @@ Hier vind u een aantal recepten die u zelf ook uit kunt voeren!
     </div>
 </a>
 
-<a href="/ggvv/lemonRibs" class="no-link-color">
+<a href="/GijsGroteVleesverbouwing/lemonRibs" class="no-link-color">
     <div class="left-image-container pop-out">
         <div class="hexagon_image image">
             <img
@@ -120,7 +120,7 @@ Hier vind u een aantal recepten die u zelf ook uit kunt voeren!
     </div>
 </a>
 
-<a href="/ggvv/moinkBalls" class="no-link-color">
+<a href="/GijsGroteVleesverbouwing/moinkBalls" class="no-link-color">
     <div class="right-image-container pop-out">
         <div class="text">
             <p>
@@ -142,7 +142,7 @@ Hier vind u een aantal recepten die u zelf ook uit kunt voeren!
     </div>
 </a>
 
-<a href="/ggvv/moinkSaucijzen" class="no-link-color">
+<a href="/GijsGroteVleesverbouwing/moinkSaucijzen" class="no-link-color">
     <div class="left-image-container pop-out">
         <div class="hexagon_image image">
             <img
@@ -164,7 +164,7 @@ Hier vind u een aantal recepten die u zelf ook uit kunt voeren!
     </div>
 </a>
 
-<a href="/ggvv/frikandelBurnedEnds" class="no-link-color">
+<a href="/GijsGroteVleesverbouwing/frikandelBurnedEnds" class="no-link-color">
     <div class="right-image-container pop-out">
         <div class="text">
             <p>
@@ -187,7 +187,7 @@ Hier vind u een aantal recepten die u zelf ook uit kunt voeren!
     </div>
 </a>
 
-<a href="/ggvv/brood" class="no-link-color">
+<a href="/GijsGroteVleesverbouwing/brood" class="no-link-color">
     <div class="left-image-container pop-out">
         <div class="hexagon_image image">
             <img
@@ -211,7 +211,7 @@ Hier vind u een aantal recepten die u zelf ook uit kunt voeren!
     </div>
 </a>
 
-<a href="/ggvv/rookhout" class="no-link-color">
+<a href="/GijsGroteVleesverbouwing/rookhout" class="no-link-color">
     <div class="right-image-container pop-out">
         <div class="text">
             <p>
