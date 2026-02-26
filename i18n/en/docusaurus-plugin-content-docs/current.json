@@ -1,0 +1,18 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.GijsGroteTuinverbouwing": {
+    "message": "GijsGroteTuinverbouwing",
+    "description": "The label for category 'GijsGroteTuinverbouwing' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Intro": {
+    "message": "Intro",
+    "description": "The label for category 'Intro' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.GijsGroteGarageverbouwing": {
+    "message": "GijsGroteGarageverbouwing",
+    "description": "The label for category 'GijsGroteGarageverbouwing' in sidebar 'tutorialSidebar'"
+  }
+}
