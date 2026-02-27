@@ -36,6 +36,7 @@ jobs:
         customCss: './static/custom-css.css'
         NavbarFromRootDir: 'true'
         DefaultLanguage: 'nl'
+        kingtechActionsBranch: 'feature/docusaurus-translations'
         #configFile: '${{ github.workspace }}/configs/docusaurus.config.js'
         #sideBarsFile: '${{ github.workspace }}/configs/sidebars.js'
 
