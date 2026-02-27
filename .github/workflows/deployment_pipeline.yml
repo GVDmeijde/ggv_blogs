@@ -5,6 +5,7 @@ on:
   push:
     branches:
       - main
+      - feature/translations
   pull_request:
     branches:
       - main
@@ -23,7 +24,7 @@ jobs:
 
     ### Build docusaurus site
     - name: Build docusaurus site
-      uses: kingtechnl/githubactions/docusaurus-build@main
+      uses: kingtechnl/githubactions/docusaurus-build@feature/docusaurus-translations
       with:
         targetDir: '${{ github.workspace }}/_publish'
         siteName: 'GGV Blogs'
@@ -34,8 +35,9 @@ jobs:
         packages: 'react-image-gallery@2.1.1'
         customCss: './static/custom-css.css'
         NavbarFromRootDir: 'true'
-        configFile: '${{ github.workspace }}/configs/docusaurus.config.js'
-        sideBarsFile: '${{ github.workspace }}/configs/sidebars.js'
+        DefaultLanguage: 'nl'
+        #configFile: '${{ github.workspace }}/configs/docusaurus.config.js'
+        #sideBarsFile: '${{ github.workspace }}/configs/sidebars.js'
 
     ### Deploy to GitHub Pages
     - name: Deploy to GitHub Pages
