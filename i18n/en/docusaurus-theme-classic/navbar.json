@@ -1,0 +1,30 @@
+{
+  "title": {
+    "message": "GGV Blogs",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "KingTech Logo",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Docs": {
+    "message": "Docs",
+    "description": "Navbar item with label Docs"
+  },
+  "item.label.KingTech": {
+    "message": "KingTech",
+    "description": "Navbar item with label KingTech"
+  },
+  "item.label.GijsGroteTuinverbouwing": {
+    "message": "Gijs Great Garden Makeover",
+    "description": "Navbar item with label Gijs Grote Tuinverbouwing"
+  },
+  "item.label.GijsGroteGarageverbouwing": {
+    "message": "Gijs Great Garage Makeover",
+    "description": "Navbar item with label Gijs Grote Garageverbouwing"
+  },
+  "item.label.GijsGroteVleesverbouwing": {
+    "message": "Gijs Great Meat Makeover",
+    "description": "Navbar item with label Gijs Grote Vleesverbouwing"
+  }
+}
