@@ -14,5 +14,17 @@
   "item.label.KingTech": {
     "message": "KingTech",
     "description": "Navbar item with label KingTech"
+  },
+  "item.label.GijsGroteTuinverbouwing": {
+    "message": "Gijs Grote Tuinverbouwing",
+    "description": "Navbar item with label Gijs Grote Tuinverbouwing"
+  },
+  "item.label.GijsGroteGarageverbouwing": {
+    "message": "Gijs Grote Garageverbouwing",
+    "description": "Navbar item with label Gijs Grote Garageverbouwing"
+  },
+  "item.label.GijsGroteVleesverbouwing": {
+    "message": "Gijs Grote Vleesverbouwing",
+    "description": "Navbar item with label Gijs Grote Vleesverbouwing"
   }
 }
