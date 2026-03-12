@@ -4,178 +4,182 @@ unlisted: true
 
 import ImageGallery from 'react-image-gallery';
 import "react-image-gallery/styles/image-gallery.css";
+import CloudinaryGallery from '../components/CloudinaryGallery.mdx';
 
 # Gijs grote zolderverbouwing
 
+export const cloudinaryOriginalBaseUrl = 'https://res.cloudinary.com/kingtech/image/upload';
+export const cloudinaryThumbnailBaseUrl = 'https://res.cloudinary.com/kingtech/image/upload/c_fill,g_auto,w_250,h_150,q_auto,f_auto';
+
 export const gallery1Images = [
-  { original: '/img/ggzv/PXL_20251026_093502451.MP.jpg', thumbnail: '/img/ggzv/PXL_20251026_093502451.MP.jpg' },
-  { original: '/img/ggzv/PXL_20251026_093655720.jpg', thumbnail: '/img/ggzv/PXL_20251026_093655720.jpg' },
-  { original: '/img/ggzv/PXL_20251026_093659268.jpg', thumbnail: '/img/ggzv/PXL_20251026_093659268.jpg' },
-  { original: '/img/ggzv/PXL_20251026_155826107.jpg', thumbnail: '/img/ggzv/PXL_20251026_155826107.jpg' },
-  { original: '/img/ggzv/PXL_20251026_175202142.jpg', thumbnail: '/img/ggzv/PXL_20251026_175202142.jpg' },
-  { original: '/img/ggzv/PXL_20251026_175207682.jpg', thumbnail: '/img/ggzv/PXL_20251026_175207682.jpg' },
-  { original: '/img/ggzv/PXL_20251027_093954599.MP.jpg', thumbnail: '/img/ggzv/PXL_20251027_093954599.MP.jpg' },
+  'v1772892389/PXL_20251026_093655720_cxjs4z.jpg',
+  'v1772892390/PXL_20251026_093659268_ac2gij.jpg',
+  'v1772892389/PXL_20251026_093502451.MP_vh4ay2.jpg',
+  'v1772892390/PXL_20251026_155826107_ix2mnm.jpg',
+  'v1772892391/PXL_20251026_175202142_pq9st9.jpg',
+  'v1772892393/PXL_20251027_093954599.MP_ujqrb4.jpg',
+  'v1772892392/PXL_20251026_175207682_nernkx.jpg',
 ];
 
 export const gallery2Images = [
-  { original: '/img/ggzv/PXL_20251027_092340747.jpg', thumbnail: '/img/ggzv/PXL_20251027_092340747.jpg' },
-  { original: '/img/ggzv/PXL_20251027_092343176.MP.jpg', thumbnail: '/img/ggzv/PXL_20251027_092343176.MP.jpg' },
-  { original: '/img/ggzv/PXL_20251027_092404764.jpg', thumbnail: '/img/ggzv/PXL_20251027_092404764.jpg' },
+  'v1772895879/PXL_20251027_092404764_ynu2q8.jpg',
+  'v1772895880/PXL_20251027_092340747_ss0akp.jpg',
+  'v1772895881/PXL_20251027_092343176.MP_qmne3g.jpg',
 ];
 
 export const gallery3Images = [
-  { original: '/img/ggzv/PXL_20251028_131426127.jpg', thumbnail: '/img/ggzv/PXL_20251028_131426127.jpg' },
-  { original: '/img/ggzv/PXL_20251104_101243954.MP.jpg', thumbnail: '/img/ggzv/PXL_20251104_101243954.MP.jpg' },
-  { original: '/img/ggzv/PXL_20251104_113914185.jpg', thumbnail: '/img/ggzv/PXL_20251104_113914185.jpg' },
+  'v1772895961/PXL_20251028_131426127_scgq6e.jpg',
+  'v1772895971/PXL_20251104_101243954.MP_ym5wje.jpg',
+  'v1772895982/PXL_20251104_113914185_tfrrsy.jpg',
 ];
 
 export const gallery4Images = [
-  { original: '/img/ggzv/PXL_20251029_122500179.jpg', thumbnail: '/img/ggzv/PXL_20251029_122500179.jpg' },
-  { original: '/img/ggzv/PXL_20251029_133700790.jpg', thumbnail: '/img/ggzv/PXL_20251029_133700790.jpg' },
-  { original: '/img/ggzv/PXL_20251031_145045332.jpg', thumbnail: '/img/ggzv/PXL_20251031_145045332.jpg' },
+  'v1772896038/PXL_20251029_122500179_xcw5tq.jpg',
+  'v1772896046/PXL_20251029_133700790_fbrhht.jpg',
+  'v1772896054/PXL_20251031_145045332_hoeajs.jpg',
+];
+
+export const gallery5Images = [
+  'v1772896101/PXL_20251101_105705034.MP_yizefm.jpg',
+  'v1772896113/PXL_20251101_180825018_ymaqsl.jpg',
+  'v1772896121/PXL_20251102_150245951_uswwt2.jpg',
+  'v1772896128/PXL_20251102_152641940_npyfwf.jpg',
+  'v1772896136/PXL_20251102_155510117.MP_fztkuw.jpg',
 ];
 
 export const gallery6Images = [
-  { original: '/img/ggzv/PXL_20251101_105705034.MP.jpg', thumbnail: '/img/ggzv/PXL_20251101_105705034.MP.jpg' },
-  { original: '/img/ggzv/PXL_20251101_180825018.jpg', thumbnail: '/img/ggzv/PXL_20251101_180825018.jpg' },
-  { original: '/img/ggzv/PXL_20251102_150245951.jpg', thumbnail: '/img/ggzv/PXL_20251102_150245951.jpg' },
-  { original: '/img/ggzv/PXL_20251102_152641940.jpg', thumbnail: '/img/ggzv/PXL_20251102_152641940.jpg' },
-  { original: '/img/ggzv/PXL_20251102_155510117.MP.jpg', thumbnail: '/img/ggzv/PXL_20251102_155510117.MP.jpg' },
+  'v1772896204/PXL_20251103_072900091.MP_sw7f2g.jpg',
+  'v1772896212/PXL_20251103_075837450_mx09le.jpg',
+  'v1772896219/PXL_20251103_091931813_dwuhiy.jpg',
+  'v1772896226/PXL_20251103_092714477_pcmsfl.jpg',
+  'v1772896233/PXL_20251103_093755808_tpeknx.jpg',
+  'v1772896241/PXL_20251103_105233875.MP_eplygb.jpg',
+  'v1772896249/PXL_20251103_105406213.MP_knggxb.jpg',
+  'v1772896257/PXL_20251103_111238929.MP_jv5bkt.jpg',
+  'v1772896267/PXL_20251103_161528024_vpgk7r.jpg',
+];
+
+export const gallery7Images = [
+  'v1772896387/PXL_20251104_132153385_w14qwo.jpg',
+  'v1772896394/PXL_20251104_152112564_w4671y.jpg',
 ];
 
 export const gallery8Images = [
-  { original: '/img/ggzv/PXL_20251103_072900091.MP.jpg', thumbnail: '/img/ggzv/PXL_20251103_072900091.MP.jpg' },
-  { original: '/img/ggzv/PXL_20251103_075837450.jpg', thumbnail: '/img/ggzv/PXL_20251103_075837450.jpg' },
-  { original: '/img/ggzv/PXL_20251103_091931813.jpg', thumbnail: '/img/ggzv/PXL_20251103_091931813.jpg' },
-  { original: '/img/ggzv/PXL_20251103_092714477.jpg', thumbnail: '/img/ggzv/PXL_20251103_092714477.jpg' },
-  { original: '/img/ggzv/PXL_20251103_093755808.jpg', thumbnail: '/img/ggzv/PXL_20251103_093755808.jpg' },
-  { original: '/img/ggzv/PXL_20251103_105233875.MP.jpg', thumbnail: '/img/ggzv/PXL_20251103_105233875.MP.jpg' },
-  { original: '/img/ggzv/PXL_20251103_105406213.MP.jpg', thumbnail: '/img/ggzv/PXL_20251103_105406213.MP.jpg' },
-  { original: '/img/ggzv/PXL_20251103_111238929.MP.jpg', thumbnail: '/img/ggzv/PXL_20251103_111238929.MP.jpg' },
-  { original: '/img/ggzv/PXL_20251103_161528024.jpg', thumbnail: '/img/ggzv/PXL_20251103_161528024.jpg' },
+  'v1772896433/PXL_20251106_081815234_qcdebc.jpg',
+  'v1772896439/PXL_20251106_114227202_pi9qzx.jpg',
+  'v1772896447/PXL_20251106_183711436.MP_cuxxqx.jpg',
+  'v1772896454/PXL_20251107_145142610_ixvsz6.jpg',
 ];
 
 export const gallery9Images = [
-  { original: '/img/ggzv/PXL_20251104_132153385.jpg', thumbnail: '/img/ggzv/PXL_20251104_132153385.jpg' },
-  { original: '/img/ggzv/PXL_20251104_152112564.jpg', thumbnail: '/img/ggzv/PXL_20251104_152112564.jpg' },
+  'v1772896511/PXL_20251107_101055933_v4nwvt.jpg',
+  'v1772896519/PXL_20251107_160456716_acszmb.jpg',
+  'v1772896527/PXL_20251109_093431360_onfqcr.jpg',
 ];
 
 export const gallery10Images = [
-  { original: '/img/ggzv/PXL_20251105_073933446.MP.jpg', thumbnail: '/img/ggzv/PXL_20251105_073933446.MP.jpg' },
-  { original: '/img/ggzv/PXL_20251105_074051620.MP.jpg', thumbnail: '/img/ggzv/PXL_20251105_074051620.MP.jpg' },
-  { original: '/img/ggzv/PXL_20251105_074055683.MP.jpg', thumbnail: '/img/ggzv/PXL_20251105_074055683.MP.jpg' },
-  { original: '/img/ggzv/PXL_20251105_074221593.MP.jpg', thumbnail: '/img/ggzv/PXL_20251105_074221593.MP.jpg' },
-  { original: '/img/ggzv/PXL_20251105_074223077.jpg', thumbnail: '/img/ggzv/PXL_20251105_074223077.jpg' },
-  { original: '/img/ggzv/PXL_20251105_094923848.jpg', thumbnail: '/img/ggzv/PXL_20251105_094923848.jpg' },
+  'v1772896580/PXL_20251105_073933446.MP_lsmvur.jpg',
+  'v1772896588/PXL_20251105_074051620.MP_wxbybb.jpg',
+  'v1772896598/PXL_20251105_074055683.MP_jmgne9.jpg',
+  'v1772896608/PXL_20251105_074221593.MP_lxitfk.jpg',
+  'v1772896617/PXL_20251105_074223077_vescx9.jpg',
+  'v1772896627/PXL_20251105_094923848_yaqdnm.jpg',
 ];
 
 export const gallery11Images = [
-  { original: '/img/ggzv/PXL_20251106_081815234.jpg', thumbnail: '/img/ggzv/PXL_20251106_081815234.jpg' },
-  { original: '/img/ggzv/PXL_20251106_114227202.jpg', thumbnail: '/img/ggzv/PXL_20251106_114227202.jpg' },
-  { original: '/img/ggzv/PXL_20251106_183711436.MP.jpg', thumbnail: '/img/ggzv/PXL_20251106_183711436.MP.jpg' },
-  { original: '/img/ggzv/PXL_20251107_145142610.jpg', thumbnail: '/img/ggzv/PXL_20251107_145142610.jpg' },
+  'v1772896703/PXL_20251109_145405056.MP_jmw9pb.jpg',
+  'v1772896713/PXL_20251109_145411349_m5jgsu.jpg',
+  'v1772896723/PXL_20251109_145446748_pd7nvv.jpg',
+  'v1772896732/PXL_20251109_145458293_jjvs2z.jpg',
+  'v1772896740/PXL_20251109_145503927_unjdde.jpg',
+  'v1772896751/PXL_20251109_150806679_o9moob.jpg',
+  'v1772896760/PXL_20251109_152854607_jlqw0o.jpg',
 ];
 
 export const gallery12Images = [
-  { original: '/img/ggzv/PXL_20251107_101055933.jpg', thumbnail: '/img/ggzv/PXL_20251107_101055933.jpg' },
-  { original: '/img/ggzv/PXL_20251107_160456716.jpg', thumbnail: '/img/ggzv/PXL_20251107_160456716.jpg' },
-  { original: '/img/ggzv/PXL_20251109_093431360.jpg', thumbnail: '/img/ggzv/PXL_20251109_093431360.jpg' },
+  'v1772896844/PXL_20251116_143822558.MP_urknpq.jpg',
+  'v1772896853/PXL_20251116_143838044_x9vz0a.jpg',
+  'v1772896860/PXL_20251116_143842455_w3nx6a.jpg',
+  'v1772896867/PXL_20251118_140907541_qjsyki.jpg',
+  'v1772896874/PXL_20251122_171121812_mwxvjf.jpg',
+  'v1772896880/PXL_20251122_171137950_d54ftn.jpg',
 ];
 
 export const gallery13Images = [
-  { original: '/img/ggzv/PXL_20251109_145405056.MP.jpg', thumbnail: '/img/ggzv/PXL_20251109_145405056.MP.jpg' },
-  { original: '/img/ggzv/PXL_20251109_145411349.jpg', thumbnail: '/img/ggzv/PXL_20251109_145411349.jpg' },
-  { original: '/img/ggzv/PXL_20251109_145446748.jpg', thumbnail: '/img/ggzv/PXL_20251109_145446748.jpg' },
-  { original: '/img/ggzv/PXL_20251109_145458293.jpg', thumbnail: '/img/ggzv/PXL_20251109_145458293.jpg' },
-  { original: '/img/ggzv/PXL_20251109_145503927.jpg', thumbnail: '/img/ggzv/PXL_20251109_145503927.jpg' },
-  { original: '/img/ggzv/PXL_20251109_150806679.jpg', thumbnail: '/img/ggzv/PXL_20251109_150806679.jpg' },
-  { original: '/img/ggzv/PXL_20251109_152854607.jpg', thumbnail: '/img/ggzv/PXL_20251109_152854607.jpg' },
+  'v1772896965/PXL_20251123_091536120_ni9pza.jpg',
+  'v1772896973/PXL_20251125_152241462_sljy50.jpg',
+  'v1772896982/PXL_20251130_185733165_y7qx1n.jpg',
+  'v1772896993/PXL_20251130_185741295_dfvrea.jpg',
+  'v1772897003/PXL_20251130_185754660_ti0yac.jpg',
+  'v1772897012/PXL_20251130_185802553_yypzy0.jpg',
+];
+
+export const gallery14Images = [
+  'v1773341189/PXL_20251202_145411662_rnbxf0.jpg',
+  'v1773341206/PXL_20251202_145420459_fp85wj.jpg',
+  'v1773341222/PXL_20251202_145430834_aiguan.jpg',
+  'v1773341243/PXL_20251202_145440549.MP_hszpu4.jpg',
 ];
 
 export const gallery15Images = [
-  { original: '/img/ggzv/PXL_20251116_143822558.MP.jpg', thumbnail: '/img/ggzv/PXL_20251116_143822558.MP.jpg' },
-  { original: '/img/ggzv/PXL_20251116_143838044.jpg', thumbnail: '/img/ggzv/PXL_20251116_143838044.jpg' },
-  { original: '/img/ggzv/PXL_20251116_143842455.jpg', thumbnail: '/img/ggzv/PXL_20251116_143842455.jpg' },
-  { original: '/img/ggzv/PXL_20251118_140907541.jpg', thumbnail: '/img/ggzv/PXL_20251118_140907541.jpg' },
-  { original: '/img/ggzv/PXL_20251122_171121812.jpg', thumbnail: '/img/ggzv/PXL_20251122_171121812.jpg' },
-  { original: '/img/ggzv/PXL_20251122_171137950.jpg', thumbnail: '/img/ggzv/PXL_20251122_171137950.jpg' },
+  'v1773341376/PXL_20251202_145642840_vbg1lf.jpg',
+  'v1773341402/PXL_20251202_145711984_sifwe4.jpg',
+]
+
+export const gallery16Images = [
+  'v1773341552/PXL_20251226_090420354_jeow8n.jpg',
+  'v1773341581/PXL_20251226_090550020.MP_wmma3w.jpg',
+];
+
+export const gallery17Images = [
+  'v1773342156/PXL_20251230_162740134_zpce5v.jpg',
+  'v1773342184/PXL_20251230_162747900_t6pdmd.jpg',
+  'v1773342204/PXL_20251231_093314614_qvxpoq.jpg',
 ];
 
 export const gallery18Images = [
-  { original: '/img/ggzv/PXL_20251123_091536120.jpg', thumbnail: '/img/ggzv/PXL_20251123_091536120.jpg' },
-  { original: '/img/ggzv/PXL_20251125_152241462.jpg', thumbnail: '/img/ggzv/PXL_20251125_152241462.jpg' },
-  { original: '/img/ggzv/PXL_20251130_185733165.jpg', thumbnail: '/img/ggzv/PXL_20251130_185733165.jpg' },
-  { original: '/img/ggzv/PXL_20251130_185741295.jpg', thumbnail: '/img/ggzv/PXL_20251130_185741295.jpg' },
-  { original: '/img/ggzv/PXL_20251130_185754660.jpg', thumbnail: '/img/ggzv/PXL_20251130_185754660.jpg' },
-  { original: '/img/ggzv/PXL_20251130_185802553.jpg', thumbnail: '/img/ggzv/PXL_20251130_185802553.jpg' },
+  'v1773342505/PXL_20260104_144842913_jcagmc.jpg',
+  'v1773342524/PXL_20260104_144902178_zebgoc.jpg',
+  'v1773342591/PXL_20260104_165740765_tw6p2q.jpg',
+  'v1773342641/PXL_20260104_165749586_sqschf.jpg',
 ];
 
 export const gallery19Images = [
-  { original: '/img/ggzv/PXL_20251202_145411662.jpg', thumbnail: '/img/ggzv/PXL_20251202_145411662.jpg' },
-  { original: '/img/ggzv/PXL_20251202_145420459.jpg', thumbnail: '/img/ggzv/PXL_20251202_145420459.jpg' },
-  { original: '/img/ggzv/PXL_20251202_145430834.jpg', thumbnail: '/img/ggzv/PXL_20251202_145430834.jpg' },
-  { original: '/img/ggzv/PXL_20251202_145440549.MP.jpg', thumbnail: '/img/ggzv/PXL_20251202_145440549.MP.jpg' },
+  'v1773342782/PXL_20260118_163708405_ckb1h0.jpg',
+  'v1773342802/PXL_20260118_163721765_lcjsak.jpg',
 ];
 
 export const gallery20Images = [
-  { original: '/img/ggzv/PXL_20251202_145642840.jpg', thumbnail: '/img/ggzv/PXL_20251202_145642840.jpg' },
-  { original: '/img/ggzv/PXL_20251202_145711984.jpg', thumbnail: '/img/ggzv/PXL_20251202_145711984.jpg' },
-]
+  'v1773342886/PXL_20260120_162519048_lz5lqe.jpg',
+  'v1773342902/PXL_20260120_162531477_fgbcxx.jpg',
+  'v1773342926/PXL_20260127_160322674_kazn2x.jpg',
+  'v1773342943/PXL_20260127_160330138_wgxwmi.jpg',
+  'v1773342972/PXL_20260127_160342549_ropts2.jpg',
+  'v1773342989/PXL_20260201_132854893_y5nyph.jpg',
+];
+
+export const gallery21Images = [
+  'v1773343008/PXL_20260203_170743895_ds1wfg.jpg',
+  'v1773343200/PXL_20260210_110629383_cprxbr.jpg',
+  'v1773343216/PXL_20260210_130444644_e6gwhm.jpg',
+  'v1773343233/PXL_20260210_155957734_uymsb0.jpg',
+];
 
 export const gallery22Images = [
-  { original: '/img/ggzv/PXL_20251226_090420354.jpg', thumbnail: '/img/ggzv/PXL_20251226_090420354.jpg' },
-  { original: '/img/ggzv/PXL_20251226_090550020.MP.jpg', thumbnail: '/img/ggzv/PXL_20251226_090550020.MP.jpg' },
+  'v1773343362/PXL_20260301_102706080.MP_ufpwoz.jpg',
+  'v1773343378/PXL_20260301_170457209_pzr7vg.jpg',
+  'v1773343391/PXL_20260301_170502139_pwbenk.jpg',
+  'v1773343407/PXL_20260303_113144962_pnydoi.jpg',
+  'v1773343423/PXL_20260303_113148690.MP_mpxpsf.jpg',
 ];
 
 export const gallery23Images = [
-  { original: '/img/ggzv/PXL_20251230_162740134.jpg', thumbnail: '/img/ggzv/PXL_20251230_162740134.jpg' },
-  { original: '/img/ggzv/PXL_20251230_162747900.jpg', thumbnail: '/img/ggzv/PXL_20251230_162747900.jpg' },
-  { original: '/img/ggzv/PXL_20251231_093314614.jpg', thumbnail: '/img/ggzv/PXL_20251231_093314614.jpg' },
-];
-
-export const gallery25Images = [
-  { original: '/img/ggzv/PXL_20260104_144842913.jpg', thumbnail: '/img/ggzv/PXL_20260104_144842913.jpg' },
-  { original: '/img/ggzv/PXL_20260104_144902178.jpg', thumbnail: '/img/ggzv/PXL_20260104_144902178.jpg' },
-  { original: '/img/ggzv/PXL_20260104_165740765.jpg', thumbnail: '/img/ggzv/PXL_20260104_165740765.jpg' },
-  { original: '/img/ggzv/PXL_20260104_165749586.jpg', thumbnail: '/img/ggzv/PXL_20260104_165749586.jpg' },
-];
-
-export const gallery27Images = [
-  { original: '/img/ggzv/PXL_20260118_163708405.jpg', thumbnail: '/img/ggzv/PXL_20260118_163708405.jpg' },
-  { original: '/img/ggzv/PXL_20260118_163721765.jpg', thumbnail: '/img/ggzv/PXL_20260118_163721765.jpg' },
-];
-
-export const gallery28Images = [
-  { original: '/img/ggzv/PXL_20260120_162519048.jpg', thumbnail: '/img/ggzv/PXL_20260120_162519048.jpg' },
-  { original: '/img/ggzv/PXL_20260120_162531477.jpg', thumbnail: '/img/ggzv/PXL_20260120_162531477.jpg' },
-  { original: '/img/ggzv/PXL_20260127_160322674.jpg', thumbnail: '/img/ggzv/PXL_20260127_160322674.jpg' },
-  { original: '/img/ggzv/PXL_20260127_160330138.jpg', thumbnail: '/img/ggzv/PXL_20260127_160330138.jpg' },
-  { original: '/img/ggzv/PXL_20260127_160342549.jpg', thumbnail: '/img/ggzv/PXL_20260127_160342549.jpg' },
-  { original: '/img/ggzv/PXL_20260201_132854893.jpg', thumbnail: '/img/ggzv/PXL_20260201_132854893.jpg' },
-  { original: '/img/ggzv/PXL_20260203_170743895.jpg', thumbnail: '/img/ggzv/PXL_20260203_170743895.jpg' },
-];
-
-export const gallery32Images = [
-  { original: '/img/ggzv/PXL_20260210_110629383.jpg', thumbnail: '/img/ggzv/PXL_20260210_110629383.jpg' },
-  { original: '/img/ggzv/PXL_20260210_130444644.jpg', thumbnail: '/img/ggzv/PXL_20260210_130444644.jpg' },
-  { original: '/img/ggzv/PXL_20260210_155957734.jpg', thumbnail: '/img/ggzv/PXL_20260210_155957734.jpg' },
-];
-
-export const gallery33Images = [
-  { original: '/img/ggzv/PXL_20260301_102706080.MP.jpg', thumbnail: '/img/ggzv/PXL_20260301_102706080.MP.jpg' },
-  { original: '/img/ggzv/PXL_20260301_170457209.jpg', thumbnail: '/img/ggzv/PXL_20260301_170457209.jpg' },
-  { original: '/img/ggzv/PXL_20260301_170502139.jpg', thumbnail: '/img/ggzv/PXL_20260301_170502139.jpg' },
-  { original: '/img/ggzv/PXL_20260303_113144962.jpg', thumbnail: '/img/ggzv/PXL_20260303_113144962.jpg' },
-  { original: '/img/ggzv/PXL_20260303_113148690.MP.jpg', thumbnail: '/img/ggzv/PXL_20260303_113148690.MP.jpg' },
-];
-
-export const gallery34Images = [
-  { original: '/img/ggzv/PXL_20260303_133835538.jpg', thumbnail: '/img/ggzv/PXL_20260303_133835538.jpg' },
-  { original: '/img/ggzv/PXL_20260303_133844383.jpg', thumbnail: '/img/ggzv/PXL_20260303_133844383.jpg' },
-  { original: '/img/ggzv/PXL_20260303_155916635.jpg', thumbnail: '/img/ggzv/PXL_20260303_155916635.jpg' },
-  { original: '/img/ggzv/PXL_20260303_155924725.jpg', thumbnail: '/img/ggzv/PXL_20260303_155924725.jpg' },
-  { original: '/img/ggzv/PXL_20260303_155931865.jpg', thumbnail: '/img/ggzv/PXL_20260303_155931865.jpg' },
-  { original: '/img/ggzv/PXL_20260303_155940168.jpg', thumbnail: '/img/ggzv/PXL_20260303_155940168.jpg' },
+  'v1773343664/PXL_20260303_133835538_qraqwe.jpg',
+  'v1773343689/PXL_20260303_133844383_mbzz5f.jpg',
+  'v1773343705/PXL_20260303_155916635_onz7y0.jpg',
+  'v1773343727/PXL_20260303_155924725_uh3qwh.jpg',
+  'v1773343743/PXL_20260303_155931865_yjknlt.jpg',
+  'v1773343766/PXL_20260303_155940168_nkdurv.jpg',
 ];
 
 
@@ -190,33 +194,53 @@ De eerste grote klus, was het leegruimen van de zolder.
 
 Nadat de zolder is leeggeruimt, heeft Gijs met zijn hulptroepen de bestaande inrichting vakkundig gedemonteerd.
 
-<ImageGallery items={gallery1Images} lazyLoad='true' />
+<CloudinaryGallery
+  images={gallery1Images}
+  originalBaseUrl={cloudinaryOriginalBaseUrl}
+  thumbnailBaseUrl={cloudinaryThumbnailBaseUrl}
+/>
 
 ## 2025-10-27
 
 Om te kijken of het dak nog geisoleerd moest worden, heeft Gijs een klein gat geboord in het plafond. Hiermee kon hij precies zien hoe dik het huidige isolatiemateriaal was.
 Helaas bleek dit slechts een dunne laag. Veel te weinig voor huidige standaarden.
 
-<ImageGallery items={gallery2Images} lazyLoad='true' />
+<CloudinaryGallery
+  images={gallery2Images}
+  originalBaseUrl={cloudinaryOriginalBaseUrl}
+  thumbnailBaseUrl={cloudinaryThumbnailBaseUrl}
+/>
 
 ## 2025-10-28
 
 Op naar de bouwmarkt dus. Gijs slaat groots in: Balken, gipsplaten en natuurlijk een hoop isolatiemateriaal.
 
-<ImageGallery items={gallery3Images} lazyLoad='true' />
+<CloudinaryGallery
+  images={gallery3Images}
+  originalBaseUrl={cloudinaryOriginalBaseUrl}
+  thumbnailBaseUrl={cloudinaryThumbnailBaseUrl}
+/>
 
 ## 2025-10-29
 
 Gijs heeft een prachtige afkortzaag, maar helaas is de stofzuigeraansluiting voor deze afkortzaag specifiek voor bosch stofzuigers. Gijs heeft al een prachtige karcher stofzuiger, dus hij heeft een adapter geprint om deze stofzuiger op zijn afkortzaag aan te sluiten. 
 
-<ImageGallery items={gallery4Images} lazyLoad='true' />
+<CloudinaryGallery
+  images={gallery4Images}
+  originalBaseUrl={cloudinaryOriginalBaseUrl}
+  thumbnailBaseUrl={cloudinaryThumbnailBaseUrl}
+/>
 
 ## 2025-11-01
 
 Dan kan het grote constructiewerk beginnen.
 Gijs plaatst een voorzetwand voor de achterwand van de zolder. Dit stelt hem in staat de zolder beter te isoleren en leidingen netjes weg te werken in de muur.
 
-<ImageGallery items={gallery6Images} lazyLoad='true' />
+<CloudinaryGallery
+  images={gallery5Images}
+  originalBaseUrl={cloudinaryOriginalBaseUrl}
+  thumbnailBaseUrl={cloudinaryThumbnailBaseUrl}
+/>
 
 
 ## 2025-11-03
@@ -225,29 +249,49 @@ Dan is het grote moment aangebroken. Het dakkapel wordt geplaatst.
 Het dakkapel is in een werkplaats gefabriceert, en wordt in een geheel geplaatst. 
 Eerst wordt een gat in het dak gezaagd, een grote kraan heist een aantal big-bags met afval via dit gat naar beneden. Dit scheelt veel sjouwen. Vervolgens heist de kraan het dakkapel over het dak, en wordt het op zijn definitieve locatie vastgeschroefd.
 
-<ImageGallery items={gallery8Images} lazyLoad='true' />
+<CloudinaryGallery
+  images={gallery6Images}
+  originalBaseUrl={cloudinaryOriginalBaseUrl}
+  thumbnailBaseUrl={cloudinaryThumbnailBaseUrl}
+/>
 
 ## 2025-11-04
 
 Hierna bikkelt Gijs weer hard door aan zijn voorzetwand.
 
-<ImageGallery items={gallery9Images} lazyLoad='true' />
+<CloudinaryGallery
+  images={gallery7Images}
+  originalBaseUrl={cloudinaryOriginalBaseUrl}
+  thumbnailBaseUrl={cloudinaryThumbnailBaseUrl}
+/>
 
 ## 2025-11-06
 
-<ImageGallery items={gallery11Images} lazyLoad='true' />
+<CloudinaryGallery
+  images={gallery8Images}
+  originalBaseUrl={cloudinaryOriginalBaseUrl}
+  thumbnailBaseUrl={cloudinaryThumbnailBaseUrl}
+/>
 
 ## 2025-11-07
 
 Vervolgens is het tijd voor het isoleren van het plafond. Hiervoor gebruikt Gijs dikke PUR platen. Deze brengen de isolatie van het dak in lijn met huidige nieuwbouw standaarden.
 
-<ImageGallery items={gallery12Images} lazyLoad='true' />
+<CloudinaryGallery
+  images={gallery9Images}
+  originalBaseUrl={cloudinaryOriginalBaseUrl}
+  thumbnailBaseUrl={cloudinaryThumbnailBaseUrl}
+/>
 
 ## 2025-11-05
 
 Ook schakelt hij hulptroepen in voor het op maat zagen van de isolatieplaten.
 
-<ImageGallery items={gallery10Images} lazyLoad='true' />
+<CloudinaryGallery
+  images={gallery10Images}
+  originalBaseUrl={cloudinaryOriginalBaseUrl}
+  thumbnailBaseUrl={cloudinaryThumbnailBaseUrl}
+/>
 
 
 Gijs heeft een stukje van de oude isolatiemateriaal naast de nieuwe isolatieplaten gehouden. Hiermee is het verschil duidelijk te zien.
@@ -259,7 +303,12 @@ Gijs heeft een stukje van de oude isolatiemateriaal naast de nieuwe isolatieplat
 Helaas heeft Gijs tijdens het isoleren, een oude lekkage ontdekt. Dit leek te komen door scheurtjes in verouderd daklood. 
 Omdat het dakbeschot ook aan vervanging toe was, heeft Gijs ervoor gekozen dit meteen te laten vervangen voor keraliet. Deze kunststof 'planken' zijn bijna niet van echt hout te onderscheiden en vergen weinig tot geen onderhoud. Hierdoor moest de verbouwing helaas wel worden stilgelegd tot de lekkage opgelost kon worden.
 
-<ImageGallery items={gallery13Images} lazyLoad='true' />
+
+<CloudinaryGallery
+  images={gallery11Images}
+  originalBaseUrl={cloudinaryOriginalBaseUrl}
+  thumbnailBaseUrl={cloudinaryThumbnailBaseUrl}
+/>
 
 ## 2025-11-11
 
@@ -270,42 +319,70 @@ Omdat het dakbeschot ook aan vervanging toe was, heeft Gijs ervoor gekozen dit m
 Hoewel Gijs niet verder kon in de hoek van de lekkage, kon hij wel verder met de rest van het dak.
 Dus ging hij onvermoeid door met het plaatsen van nieuwe isolatie platen tegen het plafond, en deze weer af te dekken met gipsplaten voor een strakke look.
 
-<ImageGallery items={gallery15Images} lazyLoad='true' />
+<CloudinaryGallery
+  images={gallery12Images}
+  originalBaseUrl={cloudinaryOriginalBaseUrl}
+  thumbnailBaseUrl={cloudinaryThumbnailBaseUrl}
+/>
 
 ## 2025-11-23
 
 Omdat schroeven te weinig grip hebben in de isolatieplaten, zijn zowel de isolatieplaten en gipsplaten tegen het oude plafond bevestigd met bouwlijm. 
 
-<ImageGallery items={gallery18Images} lazyLoad='true' />
+<CloudinaryGallery
+  images={gallery13Images}
+  originalBaseUrl={cloudinaryOriginalBaseUrl}
+  thumbnailBaseUrl={cloudinaryThumbnailBaseUrl}
+/>
 
 ## 2025-12-02
 
 Om de individuele gipsplaten tot een strak geheel af te werken, smeert Gijs de naden af met knauf.
 
-<ImageGallery items={gallery19Images} lazyLoad='true' />
+<CloudinaryGallery
+  images={gallery14Images}
+  originalBaseUrl={cloudinaryOriginalBaseUrl}
+  thumbnailBaseUrl={cloudinaryThumbnailBaseUrl}
+/>
 
 Met een thermische camera kan Gijs zien of de knauf goed is gedroogd, en of er slecht geisoleerde plekken zijn.
 Tot alles netjes is afgekit zal er een kier rond de platen zichtbaar zijn.
 
-<ImageGallery items={gallery20Images} lazyLoad='true' />
+<CloudinaryGallery
+  images={gallery15Images}
+  originalBaseUrl={cloudinaryOriginalBaseUrl}
+  thumbnailBaseUrl={cloudinaryThumbnailBaseUrl}
+/>
 
 ## 2025-12-26
 
 In de bouwmarkt, zoekt Gijs inspiratie voor het plaatsen van een afscherming tussen de zolder en het trapgat. Dit voorkomt dat er in de winter teveel warmte naar zolder verdwijnt, warmte stijgt namelijk op dus een open trapgat kan op de lagere verdiepingen voor kou zorgen.
 
-<ImageGallery items={gallery22Images} lazyLoad='true' />
+<CloudinaryGallery
+  images={gallery16Images}
+  originalBaseUrl={cloudinaryOriginalBaseUrl}
+  thumbnailBaseUrl={cloudinaryThumbnailBaseUrl}
+/>
 
 ## 2025-12-30
 
 Na het afsmeren en opschuren is het tijd voor een eerste laag grondverf. Dit voorkomt dat de kwetsbare knauf beschadigd tijdens verdere werkzaamheden.
 
-<ImageGallery items={gallery23Images} lazyLoad='true' />
+<CloudinaryGallery
+  images={gallery17Images}
+  originalBaseUrl={cloudinaryOriginalBaseUrl}
+  thumbnailBaseUrl={cloudinaryThumbnailBaseUrl}
+/>
 
 ## 2026-01-04
 
 Voor een strakke afwerking van de nok van het huis, is gekozen dit iets te verlagen. Hierdoor kan Gijs ook spotjes plaatsen voor voldoende verlichting in de avond.
 
-<ImageGallery items={gallery25Images} lazyLoad='true' />
+<CloudinaryGallery
+  images={gallery18Images}
+  originalBaseUrl={cloudinaryOriginalBaseUrl}
+  thumbnailBaseUrl={cloudinaryThumbnailBaseUrl}
+/>
 
 ## 2026-01-13
 
@@ -320,32 +397,52 @@ Om het trapgat weg te werken, heeft Gijs besloten hier een wand omheen te plaats
 Gijs moet rekening houden met voldoende ruimte om bij de wasmachine te komen, en met de kuip waar de wasmachine in staat.
 Deze kuip zat al in het huis, en heeft een afvoer in het geval de wasmachine lekt. Daarom wilt Gijs deze kuip graag in stand houden.
 
-<ImageGallery items={gallery27Images} lazyLoad='true' />
+<CloudinaryGallery
+  images={gallery19Images}
+  originalBaseUrl={cloudinaryOriginalBaseUrl}
+  thumbnailBaseUrl={cloudinaryThumbnailBaseUrl}
+/>
 
 ## 2026-01-20
 
 Deze wand is vrijstaand, en daarom moet hij aan beide kanten afgewerkt worden.
 Net als in [Gijs Grote Garageverbouwing <sup>©</sup>](https://ggv.kingtech.nl/GijsGroteGarageverbouwing/gggv), plaatst een plaat hout achter de gipsplaten voor meer stevigheid.
 
-<ImageGallery items={gallery28Images} lazyLoad='true' />
+<CloudinaryGallery
+  images={gallery20Images}
+  originalBaseUrl={cloudinaryOriginalBaseUrl}
+  thumbnailBaseUrl={cloudinaryThumbnailBaseUrl}
+/>
 
 ## 2026-02-10
 
 Ook deze wand wordt weer afgewerkt met gipsplaten voor een strakke look. 
 Gijs houd openingen voor een deur naar het trapgat, een opberghok boven het trapgat, het wegwerken van de droogtrommel en het plaatsen van een kast.
 
-<ImageGallery items={gallery32Images} lazyLoad='true' />
+<CloudinaryGallery
+  images={gallery21Images}
+  originalBaseUrl={cloudinaryOriginalBaseUrl}
+  thumbnailBaseUrl={cloudinaryThumbnailBaseUrl}
+/>
 
 ## 2026-03-01
 
 Ook het trapgat wordt netjes afgewerkt. Om de kale betonmuur af te werken lijmt Gijs hier gipsplaten tegenaan.
 Met stempels worden de platen tegen de beton muur gehouden terwijl de bouwlijm droogt. Zo kan Gijs alvast de volgende plaat op maat snijden.
 
-<ImageGallery items={gallery33Images} lazyLoad='true' />
+<CloudinaryGallery
+  images={gallery22Images}
+  originalBaseUrl={cloudinaryOriginalBaseUrl}
+  thumbnailBaseUrl={cloudinaryThumbnailBaseUrl}
+/>
 
 ## 2026-03-03
 
 Vervolgens worden de platen weer afgesmeerd met Knauf voor een strakke look.
 Om de hoeken van de platen te beschermen tegen stoten, worden overal metalen hoekframes bevestigd voor deze afgesmeerd worden.
 
-<ImageGallery items={gallery34Images} lazyLoad='true' />
+<CloudinaryGallery
+  images={gallery23Images}
+  originalBaseUrl={cloudinaryOriginalBaseUrl}
+  thumbnailBaseUrl={cloudinaryThumbnailBaseUrl}
+/>

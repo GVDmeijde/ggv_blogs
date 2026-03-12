@@ -1,0 +1,75 @@
+import ImageGallery from 'react-image-gallery';
+import "react-image-gallery/styles/image-gallery.css";
+
+export function isAbsoluteUrl(value) {
+  if (!value) {
+    return false;
+  }
+
+  return value.startsWith('http://') || value.startsWith('https://');
+}
+
+export function trimTrailingSlash(value) {
+  if (!value) {
+    return '';
+  }
+
+  return value.endsWith('/') ? value.slice(0, -1) : value;
+}
+
+export function trimLeadingSlash(value) {
+  if (!value) {
+    return '';
+  }
+
+  return value.startsWith('/') ? value.slice(1) : value;
+}
+
+export function toImageUrl(imageName, baseUrl) {
+  if (!imageName) {
+    return '';
+  }
+
+  if (isAbsoluteUrl(imageName) || imageName.startsWith('/')) {
+    return imageName;
+  }
+
+  var normalizedBaseUrl = trimTrailingSlash(baseUrl);
+  var normalizedImageName = trimLeadingSlash(imageName);
+  return normalizedBaseUrl ? normalizedBaseUrl + '/' + normalizedImageName : normalizedImageName;
+}
+
+export function toGalleryItems(images, options) {
+  var safeImages = images || [];
+  var safeOptions = options || {};
+  var basePath = safeOptions.basePath || '';
+  var originalBaseUrl = safeOptions.originalBaseUrl || '';
+  var thumbnailBaseUrl = safeOptions.thumbnailBaseUrl || '';
+
+  return safeImages.map(function (imageName) {
+    var original = toImageUrl(imageName, originalBaseUrl || basePath);
+    var thumbnail = toImageUrl(imageName, thumbnailBaseUrl || originalBaseUrl || basePath);
+    return { original: original, thumbnail: thumbnail };
+  });
+}
+
+export default function CloudinaryGallery(props) {
+  var safeProps = props || {};
+  var images = safeProps.images || [];
+  var basePath = safeProps.basePath || '';
+  var originalBaseUrl = safeProps.originalBaseUrl || '';
+  var thumbnailBaseUrl = safeProps.thumbnailBaseUrl || '';
+  var lazyLoad = safeProps.lazyLoad !== undefined ? safeProps.lazyLoad : true;
+
+  const items = toGalleryItems(images, {
+    basePath: basePath,
+    originalBaseUrl: originalBaseUrl,
+    thumbnailBaseUrl: thumbnailBaseUrl,
+  });
+
+  if (!items.length) {
+    return null;
+  }
+
+  return <ImageGallery items={items} lazyLoad={lazyLoad} />;
+}
