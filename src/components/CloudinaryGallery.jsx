@@ -72,5 +72,5 @@ export default function CloudinaryGallery(props) {
     return null;
   }
 
-  return <ImageGallery items={items} lazyLoad={lazyLoad} />;
+  return <><ImageGallery items={items} lazyLoad={lazyLoad} /><br /></>;
 }
