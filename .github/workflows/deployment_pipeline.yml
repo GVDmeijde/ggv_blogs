@@ -22,6 +22,12 @@ jobs:
       with: 
         fetch-depth: 0
 
+    ### Sync docs to nl i18n docs
+    - name: Sync docs to nl i18n docs
+      run: |
+        mkdir -p "${{ github.workspace }}/i18n/nl/docusaurus-plugin-content-docs/current"
+        rsync -a --delete "${{ github.workspace }}/docs/" "${{ github.workspace }}/i18n/nl/docusaurus-plugin-content-docs/current/"
+
     ### Build docusaurus site
     - name: Build docusaurus site
       uses: kingtechnl/githubactions/docusaurus-build@main
