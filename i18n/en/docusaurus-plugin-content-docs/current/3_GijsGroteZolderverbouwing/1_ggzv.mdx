@@ -1,0 +1,463 @@
+import ImageGallery from 'react-image-gallery';
+import "react-image-gallery/styles/image-gallery.css";
+import CloudinaryGallery from '@site/src/components/CloudinaryGallery';
+
+# Gijs' great attic makeover
+
+export const cloudinaryOriginalBaseUrl = 'https://res.cloudinary.com/kingtech/image/upload';
+export const cloudinaryThumbnailBaseUrl = 'https://res.cloudinary.com/kingtech/image/upload/c_fill,g_auto,w_250,h_150,q_auto,f_auto';
+
+export const gallery1Images = [
+  'v1772892389/PXL_20251026_093655720_cxjs4z.jpg',
+  'v1772892390/PXL_20251026_093659268_ac2gij.jpg',
+  'v1772892389/PXL_20251026_093502451.MP_vh4ay2.jpg',
+  'v1772892390/PXL_20251026_155826107_ix2mnm.jpg',
+  'v1772892391/PXL_20251026_175202142_pq9st9.jpg',
+  'v1772892393/PXL_20251027_093954599.MP_ujqrb4.jpg',
+  'v1772892392/PXL_20251026_175207682_nernkx.jpg',
+];
+
+export const gallery2Images = [
+  'v1772895879/PXL_20251027_092404764_ynu2q8.jpg',
+  'v1772895880/PXL_20251027_092340747_ss0akp.jpg',
+  'v1772895881/PXL_20251027_092343176.MP_qmne3g.jpg',
+];
+
+export const gallery3Images = [
+  'v1772895961/PXL_20251028_131426127_scgq6e.jpg',
+  'v1772895971/PXL_20251104_101243954.MP_ym5wje.jpg',
+  'v1772895982/PXL_20251104_113914185_tfrrsy.jpg',
+];
+
+export const gallery4Images = [
+  'v1772896038/PXL_20251029_122500179_xcw5tq.jpg',
+  'v1772896046/PXL_20251029_133700790_fbrhht.jpg',
+  'v1772896054/PXL_20251031_145045332_hoeajs.jpg',
+];
+
+export const gallery5Images = [
+  'v1772896101/PXL_20251101_105705034.MP_yizefm.jpg',
+  'v1772896113/PXL_20251101_180825018_ymaqsl.jpg',
+  'v1772896121/PXL_20251102_150245951_uswwt2.jpg',
+  'v1772896128/PXL_20251102_152641940_npyfwf.jpg',
+  'v1772896136/PXL_20251102_155510117.MP_fztkuw.jpg',
+];
+
+export const gallery6Images = [
+  'v1772896204/PXL_20251103_072900091.MP_sw7f2g.jpg',
+  'v1772896212/PXL_20251103_075837450_mx09le.jpg',
+  'v1772896219/PXL_20251103_091931813_dwuhiy.jpg',
+  'v1772896226/PXL_20251103_092714477_pcmsfl.jpg',
+  'v1772896233/PXL_20251103_093755808_tpeknx.jpg',
+  'v1772896241/PXL_20251103_105233875.MP_eplygb.jpg',
+  'v1772896249/PXL_20251103_105406213.MP_knggxb.jpg',
+  'v1772896257/PXL_20251103_111238929.MP_jv5bkt.jpg',
+  'v1772896267/PXL_20251103_161528024_vpgk7r.jpg',
+];
+
+export const gallery7Images = [
+  'v1772896387/PXL_20251104_132153385_w14qwo.jpg',
+  'v1772896394/PXL_20251104_152112564_w4671y.jpg',
+  'v1772896433/PXL_20251106_081815234_qcdebc.jpg',
+  'v1772896439/PXL_20251106_114227202_pi9qzx.jpg',
+  'v1772896447/PXL_20251106_183711436.MP_cuxxqx.jpg',
+  'v1772896454/PXL_20251107_145142610_ixvsz6.jpg',
+];
+
+export const gallery9Images = [
+  'v1773345382/PXL_20251109_161224116_ra6rtu.jpg',
+  'v1772896511/PXL_20251107_101055933_v4nwvt.jpg',
+  'v1772896519/PXL_20251107_160456716_acszmb.jpg',
+];
+
+export const gallery10Images = [
+  'v1772896580/PXL_20251105_073933446.MP_lsmvur.jpg',
+  'v1772896588/PXL_20251105_074051620.MP_wxbybb.jpg',
+  'v1772896598/PXL_20251105_074055683.MP_jmgne9.jpg',
+  'v1772896608/PXL_20251105_074221593.MP_lxitfk.jpg',
+  'v1772896617/PXL_20251105_074223077_vescx9.jpg',
+  'v1772896627/PXL_20251105_094923848_yaqdnm.jpg',
+];
+
+export const gallery11Images = [
+  'v1772896703/PXL_20251109_145405056.MP_jmw9pb.jpg',
+  'v1772896713/PXL_20251109_145411349_m5jgsu.jpg',
+  'v1772896723/PXL_20251109_145446748_pd7nvv.jpg',
+  'v1772896760/PXL_20251109_152854607_jlqw0o.jpg',
+  'v1773585612/gijs-on-roof_ucy8fp.jpg',
+];
+
+export const gallery12Images = [
+  'v1772896844/PXL_20251116_143822558.MP_urknpq.jpg',
+  'v1772896853/PXL_20251116_143838044_x9vz0a.jpg',
+  'v1772896860/PXL_20251116_143842455_w3nx6a.jpg',
+  'v1772896867/PXL_20251118_140907541_qjsyki.jpg',
+  'v1772896874/PXL_20251122_171121812_mwxvjf.jpg',
+  'v1772896527/PXL_20251109_093431360_onfqcr.jpg',
+  'v1772896880/PXL_20251122_171137950_d54ftn.jpg',
+];
+
+export const gallery13Images = [
+  'v1772896965/PXL_20251123_091536120_ni9pza.jpg',
+  'v1772896973/PXL_20251125_152241462_sljy50.jpg',
+  'v1772896982/PXL_20251130_185733165_y7qx1n.jpg',
+  'v1772896993/PXL_20251130_185741295_dfvrea.jpg',
+  'v1772897003/PXL_20251130_185754660_ti0yac.jpg',
+  'v1772897012/PXL_20251130_185802553_yypzy0.jpg',
+];
+
+export const gallery14Images = [
+  'v1773341189/PXL_20251202_145411662_rnbxf0.jpg',
+  'v1773341206/PXL_20251202_145420459_fp85wj.jpg',
+  'v1773341222/PXL_20251202_145430834_aiguan.jpg',
+  'v1773341243/PXL_20251202_145440549.MP_hszpu4.jpg',
+];
+
+export const gallery15Images = [
+  'v1773341376/PXL_20251202_145642840_vbg1lf.jpg',
+  'v1773341402/PXL_20251202_145711984_sifwe4.jpg',
+]
+
+export const gallery16Images = [
+  'v1773341552/PXL_20251226_090420354_jeow8n.jpg',
+  'v1773341581/PXL_20251226_090550020.MP_wmma3w.jpg',
+];
+
+export const gallery17Images = [
+  'v1773342156/PXL_20251230_162740134_zpce5v.jpg',
+  'v1773342184/PXL_20251230_162747900_t6pdmd.jpg',
+  'v1773342204/PXL_20251231_093314614_qvxpoq.jpg',
+];
+
+export const gallery18Images = [
+  'v1773342505/PXL_20260104_144842913_jcagmc.jpg',
+  'v1773342524/PXL_20260104_144902178_zebgoc.jpg',
+  'v1773342591/PXL_20260104_165740765_tw6p2q.jpg',
+];
+
+export const gallery19Images = [
+  'v1773345456/PXL_20260113_153947893_vsebyu.jpg',
+  'v1773342641/PXL_20260104_165749586_sqschf.jpg',
+  'v1773342782/PXL_20260118_163708405_ckb1h0.jpg',
+  'v1773342802/PXL_20260118_163721765_lcjsak.jpg',
+];
+
+export const gallery20Images = [
+  'v1773342886/PXL_20260120_162519048_lz5lqe.jpg',
+  'v1773342902/PXL_20260120_162531477_fgbcxx.jpg',
+  'v1773342926/PXL_20260127_160322674_kazn2x.jpg',
+  'v1773342943/PXL_20260127_160330138_wgxwmi.jpg',
+  'v1773342972/PXL_20260127_160342549_ropts2.jpg',
+  'v1773342989/PXL_20260201_132854893_y5nyph.jpg',
+];
+
+export const gallery21Images = [
+  'v1773343008/PXL_20260203_170743895_ds1wfg.jpg',
+  'v1773343200/PXL_20260210_110629383_cprxbr.jpg',
+  'v1773343216/PXL_20260210_130444644_e6gwhm.jpg',
+  'v1773343233/PXL_20260210_155957734_uymsb0.jpg',
+];
+
+export const gallery22Images = [
+  'v1773343362/PXL_20260301_102706080.MP_ufpwoz.jpg',
+  'v1773343378/PXL_20260301_170457209_pzr7vg.jpg',
+  'v1773343391/PXL_20260301_170502139_pwbenk.jpg',
+  'v1773343407/PXL_20260303_113144962_pnydoi.jpg',
+  'v1773343423/PXL_20260303_113148690.MP_mpxpsf.jpg',
+];
+
+export const gallery23Images = [
+  'v1773343664/PXL_20260303_133835538_qraqwe.jpg',
+  'v1773343689/PXL_20260303_133844383_mbzz5f.jpg',
+  'v1773343705/PXL_20260303_155916635_onz7y0.jpg',
+  'v1773343727/PXL_20260303_155924725_uh3qwh.jpg',
+  'v1773343743/PXL_20260303_155931865_yjknlt.jpg',
+  'v1773343766/PXL_20260303_155940168_nkdurv.jpg',
+  'v1773947878/PXL_2026-03-19_at_8.16.28_PM_z7ead6.jpg',
+];
+
+export const gallery24Images = [
+  'v1774451044/PXL_20260324_160908849_usvxm0.jpg',
+  'v1774451045/PXL_20260324_160918625_wcjrak.jpg',
+  'v1774451045/PXL_20260324_110439846_g8rkvk.jpg',
+  'v1774451045/PXL_20260324_160923926_nkb1pp.jpg',
+  'v1774451044/PXL_20260324_160948521_fetg6z.jpg',
+];
+
+
+<p style={{textAlign: 'center'}}><img src="/img/ggzv-banner.png" alt="GGGV" loading="lazy"/></p>
+
+The house Gijs bought in 2019 was already a bit older. Over the years, the roof had started to bend slightly, and because of this the roof window no longer sealed properly. While a drafty roof window is not a disaster in itself (a house still needs ventilation), it does cause a lot of heat loss. With rising energy prices, there was only one option left: a complete attic makeover!
+
+After Gijs created his own place in the shed, it was time to create a place for his lovely wife. Up until now, the attic had mainly served as storage space and a laundry area, but in the future this space should become a true woman cave. First, the attic had to be cleared out.
+
+![Cluttered attic](https://res.cloudinary.com/kingtech/image/upload/v1773580363/zolder-pre-cleanup_xnn1dm.jpg)
+
+After the attic was emptied, Gijs and his helpers carefully dismantled the existing interior.
+
+<CloudinaryGallery
+  images={gallery1Images}
+  originalBaseUrl={cloudinaryOriginalBaseUrl}
+  thumbnailBaseUrl={cloudinaryThumbnailBaseUrl}
+/>
+
+One of the big questions was: how well is the roof insulated?
+
+Because a large hole would eventually be cut into the roof, Gijs first drilled a small inspection hole in the ceiling to check the thickness of the existing insulation.
+Unfortunately, it turned out to be only a thin PUR board. In the 1980s, when the house was built, this was considered sufficient, but it is far below today’s standards.
+
+<CloudinaryGallery
+  images={gallery2Images}
+  originalBaseUrl={cloudinaryOriginalBaseUrl}
+  thumbnailBaseUrl={cloudinaryThumbnailBaseUrl}
+/>
+
+So, off to the hardware store. Gijs stocked up big: beams, drywall sheets, and of course lots of insulation.
+The first task was building a stud wall at the back side of the attic. Because attic space is limited, he split the renovation into smaller jobs and many trips to the store.
+
+<CloudinaryGallery
+  images={gallery3Images}
+  originalBaseUrl={cloudinaryOriginalBaseUrl}
+  thumbnailBaseUrl={cloudinaryThumbnailBaseUrl}
+/>
+
+Because it was late autumn when Gijs started this attic makeover, and he wanted to keep windows closed as much as possible due to the cold, he had to minimize dust.
+Gijs has a great miter saw, but the dust extractor connection was made specifically for Bosch Blue vacuum cleaners. Gijs already had a great Kärcher vacuum with a more standard connector.
+
+He could have solved this with duct tape, but Gijs is a modern man with a 3D printer. Being resourceful, he designed an adapter so standard vacuums can connect to Bosch Blue tools. The files are, of course, available [for free online](https://www.thingiverse.com/thing:7315811).
+
+<CloudinaryGallery
+  images={gallery4Images}
+  originalBaseUrl={cloudinaryOriginalBaseUrl}
+  thumbnailBaseUrl={cloudinaryThumbnailBaseUrl}
+/>
+
+Then the real structural work began.
+Gijs installed a stud wall in front of the rear attic wall. This allows better insulation and cleaner routing of cables and pipes inside the wall. Since this wall borders the neighbor’s house (which also has a livable attic), he also hoped to reduce sound transfer in both directions.
+
+The plan is to mount a TV on the right side, so Gijs added an extra-wide shaft for hidden cabling. This keeps peripherals (consoles, receivers, etc.) neatly out of sight. A power outlet is also included so all TV cables can be concealed.
+
+Finally, a wide shaft was added for ventilation from the ground floor. For this he reused the old cooker hood duct. It has not been used for years, and because better insulation makes ventilation increasingly important, this was a practical reuse.
+
+<CloudinaryGallery
+  images={gallery5Images}
+  originalBaseUrl={cloudinaryOriginalBaseUrl}
+  thumbnailBaseUrl={cloudinaryThumbnailBaseUrl}
+/>
+
+
+Then came the big moment: the dormer was installed.
+Gijs did not do this himself; building and installing a dormer is specialist work. From an insurance perspective, it is also wiser to hire a professional company.
+
+The dormer was prefabricated in a workshop and installed as one unit.
+First, a hole was cut in the roof, and all debris was loaded into big bags so a large crane could lift it down through the opening. Gijs made eager use of this by buying his own big bag and filling it with construction waste, saving a lot of heavy carrying.
+
+After all waste was removed, the crane lifted the dormer over the roof and secured it in its final position. It was then sealed water- and airtight with lead flashing and insulating foam.
+
+<CloudinaryGallery
+  images={gallery6Images}
+  originalBaseUrl={cloudinaryOriginalBaseUrl}
+  thumbnailBaseUrl={cloudinaryThumbnailBaseUrl}
+/>
+
+
+After this exciting interruption, Gijs went straight back to work on the stud wall. He already gained experience with this in [Gijs Grote Garageverbouwing <sup>©</sup>](/GijsGroteGarageverbouwing/gggv).
+
+First he built a frame and filled it with glass wool insulation. OSB boards were screwed onto the frame to add rigidity. This makes the wall more impact-resistant and makes it easier to mount shelves or paintings later.
+Drywall sheets were then installed for a clean finish. To hide seams neatly, Gijs chose boards with recessed edges so joint compound could be applied and smoothed flush.
+
+<CloudinaryGallery
+  images={gallery7Images}
+  originalBaseUrl={cloudinaryOriginalBaseUrl}
+  thumbnailBaseUrl={cloudinaryThumbnailBaseUrl}
+/>
+
+Then it was time to insulate the ceiling. For this, Gijs used thick PUR boards with an R-value of 4.5.
+Combined with the existing insulation, this brings the roof insulation in line with current new-build standards. Gijs held a piece of old insulation next to the new boards to clearly show the difference.
+
+Because PUR boards are very thick and screws have little to no grip in this material, Gijs chose construction adhesive. The existing ceiling first had to be thoroughly degreased.
+Then the boards were cut to size and construction adhesive (a PUR-like foam) was sprayed onto each board. The foam had to rest for 5 minutes before pressing the board against the ceiling.
+Each board then had to be held in place for over a minute before moving on.
+
+<CloudinaryGallery
+  images={gallery9Images}
+  originalBaseUrl={cloudinaryOriginalBaseUrl}
+  thumbnailBaseUrl={cloudinaryThumbnailBaseUrl}
+/>
+
+As you can imagine, insulating an attic is a lot of work.
+Fortunately, Gijs managed to recruit helpers to cut insulation boards to size. That way, he can also teach the next generation practical DIY skills.
+
+<CloudinaryGallery
+  images={gallery10Images}
+  originalBaseUrl={cloudinaryOriginalBaseUrl}
+  thumbnailBaseUrl={cloudinaryThumbnailBaseUrl}
+/>
+
+Unfortunately, while insulating, Gijs discovered signs of an old leak.
+This turned out to be caused by cracks in aging lead flashing and roof boarding near a level change in the house.
+
+For the new roof boarding, Gijs chose Keralit instead of wood. These synthetic boards are nearly indistinguishable from real wood at normal viewing distance, but unlike wood they require little to no maintenance.
+
+This did mean renovation work had to pause until the leak was fixed.
+Luckily, Gijs found skilled local tradesmen who could come quickly. He still had to remove the solar panels temporarily himself so they could do their work. That meant climbing onto the roof, which he definitely does not enjoy.
+
+<CloudinaryGallery
+  images={gallery11Images}
+  originalBaseUrl={cloudinaryOriginalBaseUrl}
+  thumbnailBaseUrl={cloudinaryThumbnailBaseUrl}
+/>
+
+Although he could not continue in the leak corner, he could continue on the rest of the roof.
+So he kept working tirelessly, installing new insulation boards against the ceiling and covering them with drywall for a clean finish.
+These drywall boards were also fixed with construction adhesive, because screws cannot grip the insulation behind them.
+
+<CloudinaryGallery
+  images={gallery12Images}
+  originalBaseUrl={cloudinaryOriginalBaseUrl}
+  thumbnailBaseUrl={cloudinaryThumbnailBaseUrl}
+/>
+
+After finishing the ceiling with drywall, the attic immediately started to feel much more complete.
+Gluing the insulation and drywall allowed Gijs to keep the construction compact, so the original beams remain visible, which was an important wish from his wife.
+
+<CloudinaryGallery
+  images={gallery13Images}
+  originalBaseUrl={cloudinaryOriginalBaseUrl}
+  thumbnailBaseUrl={cloudinaryThumbnailBaseUrl}
+/>
+
+To turn the individual drywall boards into one clean whole, Gijs filled all seams with joint compound.
+Just like the boards on his stud wall, these board edges are slightly recessed so they can be merged into one smooth surface.
+It looks messy at first, but once sanded and painted, the separate boards are barely distinguishable.
+
+<CloudinaryGallery
+  images={gallery14Images}
+  originalBaseUrl={cloudinaryOriginalBaseUrl}
+  thumbnailBaseUrl={cloudinaryThumbnailBaseUrl}
+/>
+
+Using a thermal camera, Gijs can check whether the Knauf compound has dried well and whether any spots are still poorly insulated.
+Until everything is neatly caulked, a visible gap remains around the boards.
+
+<CloudinaryGallery
+  images={gallery15Images}
+  originalBaseUrl={cloudinaryOriginalBaseUrl}
+  thumbnailBaseUrl={cloudinaryThumbnailBaseUrl}
+/>
+
+After filling and sanding, it was time for a first coat of primer.
+This prevents the vulnerable gypsum surface from being damaged during further work. Gypsum itself is very delicate; even a soft brush can leave grooves.
+Primer binds by penetrating deep into the material and provides a first protective layer.
+
+<CloudinaryGallery
+  images={gallery17Images}
+  originalBaseUrl={cloudinaryOriginalBaseUrl}
+  thumbnailBaseUrl={cloudinaryThumbnailBaseUrl}
+/>
+
+For a clean finish at the roof ridge, it was decided to lower it slightly.
+Because this is an older house, walls and beams are not perfectly straight. The lowered ceiling helps conceal that.
+
+As an additional benefit, Gijs can install recessed spotlights for evening lighting.
+Because the final room layout was still unknown, a traditional hanging lamp could limit options. Spotlights are a great flexible solution.
+
+<CloudinaryGallery
+  images={gallery18Images}
+  originalBaseUrl={cloudinaryOriginalBaseUrl}
+  thumbnailBaseUrl={cloudinaryThumbnailBaseUrl}
+/>
+
+Then it was time for the other side of the attic.
+So far, the work was fairly straightforward. But this side includes the staircase, central heating boiler, solar inverter, washing machine and dryer. <br/>
+Where many homes keep a 1–2 meter strip open and place a wall with a door, Gijs decided to maximize every bit of space.
+
+To finish around the stair opening, he wanted to build a surrounding wall.
+This wall would continue on both sides to create a space for the boiler and a storage room.
+The washing machine sits in a utility tray with drain (in case of leakage), and Gijs wanted to keep that functional.
+Unfortunately, not everything is in one straight line, so some creative carpentry was required.
+But first: new materials.
+
+<CloudinaryGallery
+  images={gallery19Images}
+  originalBaseUrl={cloudinaryOriginalBaseUrl}
+  thumbnailBaseUrl={cloudinaryThumbnailBaseUrl}
+/>
+
+Unlike the wall on the other side of the attic, this one is freestanding, so it needed finishing on both sides.
+Again, Gijs added a wooden board behind the drywall for extra strength.
+A layer of glass wool was placed between the studs.
+Even though this wall does not require thermal insulation, it helps acoustics. The wall transmits less sound, which is immediately noticeable when you knock on it.
+
+The ceiling in the stair opening was also finished neatly.
+This not only looks cleaner, but also allows routing pipes and cables from one side of the stair opening to the other.
+
+<CloudinaryGallery
+  images={gallery20Images}
+  originalBaseUrl={cloudinaryOriginalBaseUrl}
+  thumbnailBaseUrl={cloudinaryThumbnailBaseUrl}
+/>
+
+Of course, this wall was also finished with drywall for a clean look.
+Gijs left openings for a door to the stair opening, the storage room next to the stairs, and an additional storage area above the stair opening.
+He also plans to place the dryer in a niche, which is the opening you see on the left.
+Because placing the dryer would otherwise leave unused space next to it, he also left an opening for a cabinet. This way every centimeter is used.
+
+<CloudinaryGallery
+  images={gallery21Images}
+  originalBaseUrl={cloudinaryOriginalBaseUrl}
+  thumbnailBaseUrl={cloudinaryThumbnailBaseUrl}
+/>
+
+The stair opening itself was also finished neatly.
+To cover the bare concrete wall, Gijs mounted drywall panels using construction adhesive.
+Props hold the panels against the concrete while the adhesive cures, allowing him to cut the next panel to size in the meantime.
+
+<CloudinaryGallery
+  images={gallery22Images}
+  originalBaseUrl={cloudinaryOriginalBaseUrl}
+  thumbnailBaseUrl={cloudinaryThumbnailBaseUrl}
+/>
+
+Drywall is relatively fragile, so to protect corners from impact, metal corner profiles were installed everywhere.
+This prevents damage when someone bumps into wall corners or openings.
+
+These boards were then skimmed again with Knauf compound.
+It may look rough at first, but Gijs prefers applying a wider layer before sanding it smooth. This delivers a very clean end result.
+
+<CloudinaryGallery
+  images={gallery23Images}
+  originalBaseUrl={cloudinaryOriginalBaseUrl}
+  thumbnailBaseUrl={cloudinaryThumbnailBaseUrl}
+/>
+
+After sanding and priming, this phase of the renovation is complete as well.
+Before Gijs starts the next phase, it is time to tidy up the attic. For the next phase he needs to be able to move around freely, and a tidy workspace is essential for that.
+Besides: an orderly workspace makes for an orderly mind.
+
+<CloudinaryGallery
+  images={gallery24Images}
+  originalBaseUrl={cloudinaryOriginalBaseUrl}
+  thumbnailBaseUrl={cloudinaryThumbnailBaseUrl}
+/>
+
+
+<!--
+<hr/>
+WORK IN PROGRESS
+<hr/>
+
+Because a lot of heat escapes to the attic in winter, Gijs wanted to be able to close off the stair opening.
+This came with a few challenges. When entering the attic from the stairs, a person stands lower, so a door handle would need to be placed lower.
+But when leaving the attic, that same handle would suddenly feel awkwardly low. <br/>
+In addition, a standard swing door is not practical here: it cannot open toward the stair opening due to limited maneuvering space, and a swinging door above stairs can be dangerous if wind slams it shut (for example when a window is open).
+
+Looking for inspiration, Gijs explored the hardware store and concluded that a sliding door would be ideal.
+But that also has its own challenges: to avoid tripping hazards, he did not want rails on the floor.
+
+<CloudinaryGallery
+  images={gallery16Images}
+  originalBaseUrl={cloudinaryOriginalBaseUrl}
+  thumbnailBaseUrl={cloudinaryThumbnailBaseUrl}
+/>
+-->

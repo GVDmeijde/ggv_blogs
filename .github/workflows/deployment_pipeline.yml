@@ -5,6 +5,7 @@ on:
   push:
     branches:
       - main
+      - 'feature/*'
   pull_request:
     branches:
       - main
@@ -20,6 +21,12 @@ jobs:
     - uses: actions/checkout@v3
       with: 
         fetch-depth: 0
+
+    ### Sync docs to nl i18n docs
+    - name: Sync docs to nl i18n docs
+      run: |
+        mkdir -p "${{ github.workspace }}/i18n/nl/docusaurus-plugin-content-docs/current"
+        rsync -a --delete "${{ github.workspace }}/docs/" "${{ github.workspace }}/i18n/nl/docusaurus-plugin-content-docs/current/"
 
     ### Build docusaurus site
     - name: Build docusaurus site

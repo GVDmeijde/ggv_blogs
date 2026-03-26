@@ -33,3 +33,13 @@ npm install react-image-gallery
 
 ## Packages
 Voor de foto gallerijen gebruiken we [deze](https://www.npmjs.com/package/react-image-gallery) package.
+
+## Cloudinary
+Omdat deze website via GitHub pages wordt gehost, hebben we een opslaglimiet van 2GB. Door het gebruik van veel foto's op deze site, lopen we al snel tegen dit limiet aan. Om dit op te lossen hosten we onze foto's op een externe service: [Cloudinary](https://console.cloudinary.com/app/c-c5d4df323eceb4eabd572da3dd3a5c/assets/media_library/folders/ce644c7e270960ab2cdeca0924bf772e64?view_mode=mosaic).
+
+Cloudinary stelt ons ook in staat om kleinere thumbnails te genereren op basis van de volwaardige foto's. Hiermee kunnen we de laadtijden van de website ernstig verbeteren. Cloudinary genereert automatisch kleinere afbeeldingen door de juiste parameters aan de URL toe te voegen. Hiermee kunnen we een formaat forceren en een zoom/focus voor de nieuwe resolutie defineren.
+
+'''
+https://res.cloudinary.com/kingtech/image/upload/mijn/foto.jpg
+https://res.cloudinary.com/kingtech/image/upload/c_fill,g_auto,w_250,h_150,q_auto,f_auto/mijn/foto.jpg
+'''

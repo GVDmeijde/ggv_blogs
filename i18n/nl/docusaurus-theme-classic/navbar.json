@@ -26,5 +26,9 @@
   "item.label.GijsGroteVleesverbouwing": {
     "message": "Gijs Grote Vleesverbouwing",
     "description": "Navbar item with label Gijs Grote Vleesverbouwing"
+  },
+  "item.label.GijsGroteZolderverbouwing": {
+    "message": "Gijs Grote Zolderverbouwing",
+    "description": "Navbar item with label Gijs Grote Zolderverbouwing"
   }
 }
