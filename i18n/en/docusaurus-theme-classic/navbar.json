@@ -26,5 +26,9 @@
   "item.label.GijsGroteVleesverbouwing": {
     "message": "Gijs Great Meat Makeover",
     "description": "Navbar item with label Gijs Grote Vleesverbouwing"
+  },
+  "item.label.GijsGroteZolderverbouwing": {
+    "message": "Gijs Great Attic Makeover",
+    "description": "Navbar item with label Gijs Grote Zolderverbouwing"
   }
 }
