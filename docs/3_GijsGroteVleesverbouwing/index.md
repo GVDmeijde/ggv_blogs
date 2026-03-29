@@ -6,7 +6,7 @@ sidebar_position: 1
 
 <img src="/img/ggvv-banner.png" alt="GGVV" loading="lazy"/>
 
-<b>Na het overweldigende succes van [Gijs Grote Tuinverbouwing <sup>©</sup>](/GijsGroteTuinverbouwing/ggtv) en [Gijs Grote Garageverbouwing <sup>©</sup>](/GijsGroteGarageverbouwing/gggv), neemt Gijs u mee op een culinair avontuur. In Gijs Grote Vleesverbouwing <sup>©</sup> laat presentator Gijs van der Meijde u zien hoe u het meest uit uw barbecue kunt halen.</b>
+<b>Na het overweldigende succes van [Gijs Grote Tuinverbouwing <sup>©</sup>](/GijsGroteTuinverbouwing/) en [Gijs Grote Garageverbouwing <sup>©</sup>](/GijsGroteGarageverbouwing/), neemt Gijs u mee op een culinair avontuur. In Gijs Grote Vleesverbouwing <sup>©</sup> laat presentator Gijs van der Meijde u zien hoe u het meest uit uw barbecue kunt halen.</b>
 
 Na de aanleg van de beroemde tuin uit Gijs Grote Tuinverbouwing <sup>©</sup> , duurde het niet lang voor Gijs een goede barbecue aanschafte. 
 Hierop beleeft Gijs allerlei culinaire avonturen. Bent u op zoek naar inspiratie voor uw barbecue? Zoek dan niet verder. 
