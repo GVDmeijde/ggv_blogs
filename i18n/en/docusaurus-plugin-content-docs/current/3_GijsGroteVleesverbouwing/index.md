@@ -6,7 +6,7 @@ sidebar_position: 1
 
 <img src="/img/ggvv-banner.png" alt="GGVV" loading="lazy"/>
 
-<b>After the overwhelming success of [Gijs Great Garden Makeover <sup>©</sup>](../1_GijsGroteTuinverbouwing/0_ggtv.mdx) and [Gijs Great Garage Makeover <sup>©</sup>](../2_GijsGroteGarageverbouwing/1_gggv.mdx), Gijs takes you on a culinary adventure. In Gijs Great Meat Makeover <sup>©</sup>, host Gijs van der Meijde shows you how to get the most out of your barbecue.</b>
+<b>After the overwhelming success of [Gijs Great Garden Makeover <sup>©</sup>](../1_GijsGroteTuinverbouwing/) and [Gijs Great Garage Makeover <sup>©</sup>](../2_GijsGroteGarageverbouwing/), Gijs takes you on a culinary adventure. In Gijs Great Meat Makeover <sup>©</sup>, host Gijs van der Meijde shows you how to get the most out of your barbecue.</b>
 
 After building the famous garden from Gijs Great Garden Makeover <sup>©</sup>, it did not take long before Gijs bought a proper barbecue.
 Since then, he has been having all kinds of culinary adventures.
