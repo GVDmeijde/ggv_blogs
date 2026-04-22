@@ -1,6 +1,6 @@
 # Smoking Wood
 
-<p style={{textAlign: 'center'}}><img src="https://assets.biggreenegg.eu/app/uploads/2019/06/07151229/topimage-smoking-wood-2019m06-800x533-4.jpg" alt="Smoking wood" loading="lazy"/></p>
+<p style={{textAlign: 'center'}}><img src="https://res.cloudinary.com/kingtech/image/upload/q_auto/f_auto/v1776869184/rookhout_f4irav.png" alt="Smoking wood" loading="lazy"/></p>
 
 When barbecuing and smoking meat, choosing the right smoking wood, and using it correctly, is essential.
 That said, everyone has their own opinion on this, which makes sense because taste is personal.

@@ -1,6 +1,6 @@
 # Rookhout
 
-<p style={{textAlign: 'center'}}><img src="https://assets.biggreenegg.eu/app/uploads/2019/06/07151229/topimage-smoking-wood-2019m06-800x533-4.jpg" alt="Rookhout" loading="lazy"/></p>
+<p style={{textAlign: 'center'}}><img src="https://res.cloudinary.com/kingtech/image/upload/q_auto/f_auto/v1776869184/rookhout_f4irav.png" alt="Rookhout" loading="lazy"/></p>
 
 Bij het barbecueën en roken van vlees is juiste rookhout gebruiken, en het goed gebruiken van dit hout van essentieel belang. 
 Toch heeft iedereen hier zijn eigen mening over, niet gek want smaken verschillen immers. 
